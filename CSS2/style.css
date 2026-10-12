@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+}
+
+/* Cabeçalho */
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(255, 220, 0);
+    text-shadow: 2px 2px black;
+}
+
+header h2 {
+    font-style: italic;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Caixas de conteúdo */
+.caixinha {
+    background-color: white;
+    border: 2px solid darkblue;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: darkgreen;
+}
+
+/* Destaque e catálogo */
+#destaque img {
+    border-radius: 5px;
+}
+
+.filme {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.filme img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.filme h3 {
+    font-size: 16px;
+}
+
+.filme a {
+    color: darkblue;
+}
+
+.filme a:hover {
+    color: red;
+}
+
+/* Tabela */
+table {
+    width: 70%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Lista de gêneros */
+.lista {
+    list-style-type: square;
+    background-color: white;
+    padding: 25px 40px;
+    width: 200px;
+    border: 1px solid gray;
+}
+
+/* Imagem ao lado do texto */
+.imagem {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 5px 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+
+    .filme {
+        width: 140px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .caixinha {
+        padding: 10px;
+    }
+}
